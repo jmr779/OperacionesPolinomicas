@@ -40,7 +40,8 @@ public class Principal {
 		// TODO Auto-generated method stub
 		switch (linea) {
 		case "1":
-			System.out.println("Resultado de Sumar --> " + p1.sumar(p2.getPolinomio()).toString());
+			ArrayList<Monomio> resultado = p1.sumar(p2.getPolinomio());
+			System.out.println("Resultado de Sumar --> " + resultado.toString());
 			break;
 		case "2":
 			System.out.println("Resultado de Multiplicar --> " + p1.multiplicar(p2.getPolinomio()).toString());
