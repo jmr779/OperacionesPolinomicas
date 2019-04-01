@@ -25,7 +25,6 @@ public class Polinomio {
 			aux = polResult.find(monomio);
 			if (aux != null) {
 				polResult.find(monomio).setCoeficiente(aux.getCoeficiente() + monomio.getCoeficiente());
-				polResult.find(monomio).setExponente(aux.getExponente() + monomio.getExponente());
 			} else
 				polResult.getPolinomio().add(monomio);
 		}
